@@ -17,6 +17,9 @@
             a:visited {
               color: #0099cc;
             }
+            #page-wrapper {
+              width: 800px;
+            }
             #toolbar {
               width: 100%;
               height: 20px;
@@ -41,8 +44,9 @@
               padding-left: 0;
             }
             div#sidebar {
+              float: left;
               font-size: smaller;
-              background-color: #FFCC00;
+             background-color: #FFCC00; 
               width: 110px;
               padding: 3px;
             }
@@ -65,8 +69,13 @@
               clear: both;
             }
             #content {
+              float: left;
               width: 620px;
               padding: 3px;
+              margin-left: 26px;
+            }
+            #ad-rotator {
+              margin-left: 136px;
             }
             img[alt="MICROSOFT: Where do you want to go today?"] {
               display: block;
@@ -82,8 +91,9 @@
           </style>
  	</HEAD>
  	<BODY>
-        		<!--TOOLBAR_START-->
-        		<nav id="toolbar">
+          <div id="page-wrapper">
+          		<!--TOOLBAR_START-->
+          		<nav id="toolbar">
                        			<ul>
                                       				<li>
                                                              					<A HREF="#" TARGET="_top"><IMG SRC="ms_images/home_on.gif" WIDTH=103 HEIGHT=21 ALT="Microsoft Home"></A>
@@ -104,17 +114,17 @@
                        			<div id="home-link">
                                       				<A HREF="#" TARGET="_top"><IMG SRC="ms_images/msft.gif" WIDTH=91 HEIGHT=21 ALT="Microsoft Home"></A>
                        			</div>
-        		</nav>
-        		<!--TOOLBAR_END-->
-        		<FORM id="go-form" ACTION="#" target="_top">
+          		</nav>
+          		<!--TOOLBAR_END-->
+          		<FORM id="go-form" ACTION="#" target="_top">
                        			<SELECT NAME="Target">
                                       				<OPTION SELECTED VALUE="/worldwide/">Select a Location</OPTION><OPTION VALUE="/argentina/">Argentina</OPTION><OPTION VALUE="/australia/">Australia </OPTION><OPTION VALUE="/belgium/">Belgium & Luxemburg</OPTION><OPTION VALUE="/canada/">Canada</OPTION><OPTION VALUE="/caribbean/">Caribbean </OPTION><OPTION VALUE="/chile/">Chile</OPTION><OPTION VALUE="/china/">China</OPTION><OPTION VALUE="/colombia/">Colombia </OPTION><OPTION VALUE="/cze/">Czech Republic </OPTION><OPTION VALUE="/danmark/">Denmark</OPTION><OPTION VALUE="/europe/">Europe </OPTION><OPTION VALUE="/France/">France</OPTION><OPTION VALUE="http://www.microsoft.de/">Germany</OPTION><OPTION VALUE="/hk/">Hong Kong</OPTION><OPTION VALUE="/hun/">Hungary </OPTION><OPTION VALUE="/india/">India </OPTION><OPTION VALUE="/ireland/">Ireland </OPTION><OPTION VALUE="/israel/">Israel</OPTION><OPTION VALUE="/italy/">Italy </OPTION><OPTION VALUE="http://www.microsoft.co.jp/">Japan</OPTION>
                                       				<OPTION VALUE="/korea/">Korea</OPTION><OPTION VALUE="/mexico/">Mexico</OPTION><OPTION VALUE="/middleeast/">Middle East</OPTION><OPTION VALUE="/netherlands/">Netherlands</OPTION><OPTION VALUE="/norge/">Norway</OPTION><OPTION VALUE="/poland/">Poland</OPTION><OPTION VALUE="/portugal/">Portuga</OPTION><OPTION VALUE="/rus/">Russia</OPTION><OPTION VALUE="/slovakia/">Slovakia</OPTION><OPTION VALUE="/slovenija/">Slovenija</OPTION><OPTION VALUE="/southafrica/">South Africa</OPTION><OPTION VALUE="/spain/">Spain</OPTION><OPTION VALUE="/sverige/">Sweden</OPTION><OPTION VALUE="/switzerland/">Switzerland</OPTION><OPTION VALUE="/taiwan/">Taiwan</OPTION><OPTION VALUE="/uk/">United Kingdom</OPTION><OPTION VALUE="/usa/">United States</OPTION><OPTION VALUE="/uruguay/">Uruguay</OPTION>
                        			</SELECT>
                        			<INPUT TYPE=IMAGE SRC="ms_images/gobutton2.gif" width=26 height=26 alt="submit">
-        		</FORM>
-        		<!-- ###### defines content table ###### -->
-        		<div id="sidebar">
+          		</FORM>
+          		<!-- ###### defines content table ###### -->
+          		<div id="sidebar">
                        			<IMG SRC="ms_images/reconstructed/dove.gif"  width="110" height=104 ALT="">
                        			<nav id="sidebar-nav">
                                       				<ul>
@@ -141,8 +151,8 @@
                        			<P>
                                       				<A HREF="#" target="_top"><IMG SRC="ms_images/reconstructed/rsacirated.gif" WIDTH="96" HEIGHT="31" ALT="We rate with RSACi!" ></A>
                        			</P>
-        		</div>
-        		<div id="content">
+          		</div>
+          		<div id="content">
                        			<IMG SRC="ms_images/reconstructed/Banner_tagline.gif" width=388 height=97 ALT="MICROSOFT: Where do you want to go today?">
                        			<IMG SRC="ms_images/reconstructed/square.gif" ALT="*" width=15 height=15><A HREF="#" TARGET="_top">Be First to Get Visual Basic 5.0 Control Creation Edition Plus Other Tools and Technologies. </A>
                        			<P>
@@ -185,20 +195,20 @@
                                       				  See all the exciting things happening on the Internet in Latin America, and win big prizes at the same time! Register for the first Latin American Internet Explorer Race. You'll have a great time, and perhaps even win a Caribbean cruise!
                        			  </P>
                           </section>
-        		</div>
-        		<div id="ad-rotator">
+          		</div>
+          		<div id="ad-rotator">
                        			<!-- This is the cell to update with the ad rotator -->
                        			<A HREF="#"><IMG SRC="ms_images/Pacman1.gif" ALT="Return of Arcade: Pac-man" WIDTH=454 HEIGHT=54></A>
-        		</div>
-          
-        		<footer>
+          		</div>
+            
+          		<footer>
                        			Last Updated:
                        			10/18/96 10:25 AM
                           
                        			<br><A HREF="#" TARGET="_top">&copy;1996 Microsoft Corporation</A>
                           
                        			<br><A HREF="#" TARGET="_top">Information about Microsoft.com architecture</A>
-        		</footer>
-          
+          		</footer>
+          </div>     
  	</BODY>
 </HTML>
